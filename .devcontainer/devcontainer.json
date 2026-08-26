@@ -1,10 +1,17 @@
 {
-  "name": "Ubuntu Dev Environment",
-  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
-  "features": ""ghcr.io/devcontainers/features/docker-in-docker:4": {}
+  "name": "Ubuntu Docker-in-Docker Environment",
+  
+  // Uses the official Microsoft Ubuntu Devcontainer image as the host operating system
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu", 
+  
+  // Standard tool integrations provided by GitHub/Microsoft 
+  "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
       "version": "latest",
       "moby": true
     }
-  }
+  },
+  
+  // Ensures you operate with standard privileges inside your Ubuntu shell
+  "remoteUser": "codespace"
 }

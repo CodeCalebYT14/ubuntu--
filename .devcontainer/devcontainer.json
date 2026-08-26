@@ -13,5 +13,5 @@
   },
   
   // Ensures you operate with standard privileges inside your Ubuntu shell
-  "remoteUser": "codespace"
+  "remoteUser": "root"
 }
